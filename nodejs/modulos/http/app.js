@@ -1,4 +1,6 @@
-const http = require('http'); // importa o módulo HTTP
+//const http = require('http'); // importa o módulo HTTP
+
+import http from 'http'; // importa o módulo HTTP
 http.createServer((req,res) => { // cria um servidor
     res.writeHead(200, {'Content-Type': 'text/plain'}); // cabeçalho da resposta
     res.end('ABSDNKLAFYDHIASOF '); // corpo da resposta

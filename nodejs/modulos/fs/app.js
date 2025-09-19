@@ -1,4 +1,6 @@
-const fs = require('fs'); // cria uma conexão com o sistema de arquivos
+//const fs = require('fs'); // cria uma conexão com o sistema de arquivos
+
+import fs from 'fs'; // cria uma conexão com o sistema de arquivos
 
 // leitura de arquivo de forma assíncrona
 fs.readFile('file.txt', 'utf8', (erro, data) => {  

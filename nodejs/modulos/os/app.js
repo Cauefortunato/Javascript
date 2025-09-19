@@ -1,4 +1,6 @@
-const os = require('os'); // importa o módulo do sistema operacional
+//const os = require('os'); // importa o módulo do sistema operacional
+
+import os from 'os'; // importa o módulo do sistema operacional
 
 console.log(`Você esta usando o ${os.platform()}`); // exibe a plataforma do sistema operacional
 
