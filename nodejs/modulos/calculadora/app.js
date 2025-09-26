@@ -9,7 +9,11 @@ const resultadoDivisao = divisao(10, 2);
 const resultadoSubtracao = subtracao(5, 2);
 const resultadoMultiplicacao = multiplicacao(4, 3);
 
-const resultadoIdade = calculaIdade.idade(2008)
+const resultadoIdade = calculaIdade.idade("Cauê", 2008, 2025)
 
 
-console.log(`Em 2025 você tem ${resultadoIdade} anos`)
+console.log(resultadoIdade)
+console.log(`Soma: ${resultadoSoma}`);
+console.log(`Divisão: ${resultadoDivisao}`);
+console.log(`Subtração: ${resultadoSubtracao}`);
+console.log(`Multiplicação: ${resultadoMultiplicacao}`);

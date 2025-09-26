@@ -1,5 +1,5 @@
-// Função para calcular a idade com base no ano de nascimento
- export function idade(a) {
-    return hoje - a;
+export function idade(nome, anoNascimento, anoAtual) {
+    idade = anoAtual - anoNascimento;
+    return `ola, ${nome}! Em ${anoAtual} você terá ${idade} anos`;
 }
-const hoje = new Date().getFullYear();
+    
