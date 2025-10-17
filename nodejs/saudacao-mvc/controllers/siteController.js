@@ -9,6 +9,10 @@ module.exports = {
     res.sendFile('formulario.html', { root: './views' });
   },
 
+  usuario: (req, res) => {
+     res.sendFile('usuario.html', { root: './views' });
+  },
+
   saudacao: (req, res) => {
     const { nome, idade, genero } = req.body;
     const mensagem = saudacaoModel.gerarMensagemPersonalizada(nome, idade, genero);
