@@ -1,13 +1,8 @@
 
-const loginresultadoModel = require("../models/loginresultadoModel");
-const express = require('express');
-const router = express.Router();
-
-
 module.exports = {
-    clientes: (req, res) => {
+    index : (req, res) => {
         res.sendFile("clientes.html", { root: "./views" });
-    },  
+    },
 
     login : (req, res) => {
         res.sendFile("login.html", { root: "./views" });
