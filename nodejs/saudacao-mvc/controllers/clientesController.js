@@ -1,4 +1,4 @@
-
+const clienteModel = require('../models/clienteModel');
 module.exports = {
     index : (req, res) => {
         res.sendFile("clientes.html", { root: "./views" });
@@ -9,7 +9,7 @@ module.exports = {
     },
     loginresultadoModel: (req, res) => {
         const { username, password } = req.body;
-        const resultado = loginresultadoModel.validarUsuario(username, password);
+        const resultado = clienteModel.validarUsuario(username, password);
         res.send(`<h1>${resultado}</h1>`);
     }
 };
